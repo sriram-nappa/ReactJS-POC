@@ -1,0 +1,160 @@
+@fontFamily: Helvetica;
+@fontWeight: lighter;
+*{
+	font-family: @fontFamily;
+	font-weight: @fontWeight;
+}
+@media (min-width: 769px) {
+	.popup {
+		width: 80%;
+		min-width: 800px;
+		top: 15%;
+		left: 9%;
+	}
+}
+@media (max-width: 768px) {
+    body {
+		width: 767px
+	}
+	.popup {
+		width: 741px;
+		top: 5%;
+		left: 1%;
+	}
+}
+
+.main_container {
+	width: 100%;
+
+	section.inr_dtls_container {
+		width: 99%;
+		font-size: 0.6em;
+		border-bottom: 1px solid rgb(220,220,220);
+
+		section.column_left_sec {
+			width: 49%;
+		}
+		section.column_right_sec {
+			width: 49%;
+		}	 
+	}
+
+	article.acc_hdng_wrpr {
+		width: 99%;
+		border-bottom: 1px solid rgb(220,220,220);
+		padding: 0px 0px 3px 0px;
+	}
+
+	article.modification_dtls_div {
+		width: 99%;
+		font-size: 0.55em;
+		padding: 15px 0px 0px 0px;
+		font-style: italic;
+	}
+}
+.inr_dtls_container {
+
+	section {
+
+		div.cmn_row_wrpr {
+
+			width: 99%;
+			padding: 5px 0px;
+
+			label.row_name {
+				width: 41%;
+				height: 17px;
+			}
+			label.row_name_val {
+				width: 55%;
+				height: 15px;
+			}
+		}
+	}	
+}
+
+.accountTitleSpan {
+	
+}
+.acc_hdng_wrpr {
+
+	h1.acc_hding {
+		margin: 0px;
+		font-size: 0.9em;
+	}
+
+	div.close_icon_plchldr {
+		cursor: pointer;
+	}
+}
+
+.label_name_plchldr_spn{
+	
+}
+
+.last_modified_wrpr{
+	width: 15%;
+
+	span.last_modifd_txt {
+
+	}
+
+	time.last_modified_tme {
+		margin-left: 3px;
+	}
+}
+
+.last_updated_wrpr{
+	width: 15%;
+
+	span.last_updated_txt {
+
+	}
+	time.last_updated_tme {
+		margin-left: 3px;
+	}
+}
+
+.modified_by_wrpr{
+	width: 15%;
+
+	span.modified_by_txt {
+
+	}
+	span.modified_by_name {
+		margin-left: 3px;
+	}
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.popup {
+	background-color: #fff;
+	display: inline-block;
+	padding: 13px;
+	position: absolute;
+	text-align: justify;
+	z-index: 10;
+	transition: opacity .5s, top .5s;
+}
+.visibilityHidden {
+	visibility: hidden;
+	opacity: 0;
+}
+.visibilityVisible {
+	visibility: visible;
+}
+.opacityHalf {
+	opacity: 0.5;
+}
+.opacityFull {
+	opacity: 1;
+}	
